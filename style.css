@@ -1,0 +1,264 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+    box-sizing: border-box;
+}
+:root
+{
+    --teal: #59bdb1;
+    --yellow: #ffd100;
+}
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.main::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("Bg-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.3);
+    z-index: -1;
+}
+.main .navbar .t
+{
+    font-size: 2vw;
+    font-weight: 700;
+    color: var(--yellow);
+}
+.navbar-brand
+{
+    font-size: 1.5vw;
+}
+.main .navbar .navbar-nav a{
+    color: white;
+    font-size: 1.5vw;
+    margin-right: 20px;
+    font-weight: 500;
+    border-radius: 20px;
+}
+.navbar-nav a:hover
+{
+    color: black !important;
+    background-color: var(--yellow);
+    border-radius: 20px;
+}
+.content
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 80%;
+    margin-top: 30px;
+}
+.content h2
+{
+    font-size: 6vw;
+}
+.content p{
+    font-size: 3vw;
+    text-align: center;
+}
+.change::after
+{
+    content: " ";
+    font-size: 4vw;
+    color: var(--yellow);
+    border-radius: 20px;
+    animation: 10s linear infinite myanime;
+}
+@keyframes myanime
+{
+    0% { opacity: 1; content: "Asia";}
+    20% { opacity: 1; content: "North America"; }
+    40% { opacity: 1; content: "Antarctica"; }
+    60% { opacity: 1; content: "South America"; }
+    70% { opacity: 1; content: "Europe"; }
+    80% { opacity: 1; content: "Australia"; }
+    90% { opacity: 1; content: "Africa"; }
+    100% { opacity: 1; content: "Oceania"; }
+}
+.scroll
+{
+    font-size: 1.0vw;
+    padding-top: 20px;
+}
+.scroll .circle
+{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    background-color: #ffd100;
+    animation: mov 3s ease-in-out infinite;
+}
+@keyframes mov 
+{
+    0%{
+        transform: translateY(0px);
+    }
+    50%
+    {
+        transform: translateY(40px);
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+/* Section 1 */
+.section1
+{
+    height: 100vh;
+    width: 100%;
+}
+.section1 h3
+{
+    color: #ffd100;
+    margin: 30px 0px;
+    text-align: center;
+    font-size: 3vw;
+}
+.section1 .carousal
+{
+    padding-top: 30px;
+    height: 500px;
+}
+.section1 img
+{
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+    filter: brightness(0.6);
+}
+.carousel-item
+{
+    height: 600px;
+    width: 100%;
+}
+.carousel-inner h5
+{
+    font-size: 5vw;
+    color: #ffd100;
+}
+.carousel-inner p
+{
+    font-size: 2vw;
+}
+/* Section 2 */
+.section2
+{
+    height: 100vh;
+    width: 100%;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+.section2 h3
+{
+    color: #ffd100;
+    margin: 30px 0px;
+    text-align: center;
+    font-size: 3vw;
+}
+.card 
+{
+    height: 532px;
+}
+.card:hover
+{
+    box-shadow: 0px 0px 20px #ffd100;
+}
+.card img
+{
+    height: 200px;
+    border-radius: 0px;
+}
+.card .card-header
+{
+    font-size: 2vw;
+    font-weight: 600;
+}
+/* Section 3 */
+.section3
+{
+    height: 50vh;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+.section3 h3
+{
+    color: #ffd100;
+    font-size: 3vw;
+    text-align: center;
+    margin: 30px 0px;
+}
+.section3 label
+{
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2vw;
+}
+.section3 textarea
+{
+    height: 200px;
+    width: 300px;
+}
+.section3 textarea:hover
+{
+    box-shadow: 0px 0px 20px #ffd100;
+}
+.contact i
+{
+    padding-right: 30px;
+}
+.contact .insta{
+    color: #d62976;
+    font-size: 40px;
+}
+.contact .twit{
+    color: #1DA1F2;
+    font-size: 40px;
+}
+.contact .utu{
+    color: #CD201F;
+    font-size: 40px;
+}
+.section3 .f 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact label
+{
+    color: #ffd100;
+    font-size: 2vw;
+}
+/* Footer */
+.footer
+{
+    height: 9vh;
+    color: #ffd100;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer i
+{
+    color: #CD201F;
+}
+/* End of the project */
